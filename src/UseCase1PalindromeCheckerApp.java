@@ -4,21 +4,34 @@ public class UseCase1PalindromeCheckerApp {
     // Application version constant
     private static final String APP_VERSION = "1.0";
 
-    /**
-     * Main method - Entry point of the Java application
-     * JVM invokes this method automatically
-     */
+
     public static void main(String[] args) {
 
-        // Display Welcome Message
-        System.out.println("===========================================");
-        System.out.println("      Welcome to Palindrome Checker App    ");
-        System.out.println("===========================================");
-        System.out.println("Application Name : Palindrome Checker App");
-        System.out.println("Application Version : " + APP_VERSION);
-        System.out.println("===========================================");
+        public class UseCase2PalindromeCheckerApp {
 
-        System.out.println("Program initialized successfully.");
-        System.out.println("Ready to proceed to Palindrome validation...");
+            public static void main(String[] args) {
+
+                // Hardcoded string
+                String word = "madam";
+                boolean isPalindrome = true;
+
+                int n = word.length();
+
+                // Check characters till n/2
+                for (int i = 0; i < n / 2; i++) {
+                    if (word.charAt(i) != word.charAt(n - 1 - i)) {
+                        isPalindrome = false;
+                        break;
+                    }
+                }
+
+
+                if (isPalindrome) {
+                    System.out.println(word + " is a Palindrome.");
+                } else {
+                    System.out.println(word + " is not a Palindrome.");
+                }
+            }
+        }
     }
 }
