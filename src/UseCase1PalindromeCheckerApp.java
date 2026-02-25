@@ -11,13 +11,13 @@ public class UseCase1PalindromeCheckerApp {
 
             public static void main(String[] args) {
 
-                // Hardcoded string
+
                 String word = "madam";
                 boolean isPalindrome = true;
 
                 int n = word.length();
 
-                // Check characters till n/2
+
                 for (int i = 0; i < n / 2; i++) {
                     if (word.charAt(i) != word.charAt(n - 1 - i)) {
                         isPalindrome = false;
